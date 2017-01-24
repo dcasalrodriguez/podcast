@@ -23,11 +23,12 @@
 	<div class="container">
 		<nav>
 			<div class="row">
-				<div class="col-xs-12">
+				<div class="col-xs-10">
 					<h4>
 						<a href="index.html">Podcaster</a>
 					</h4>
 				</div>
+				<div class="col-xs-2 col-nav"></div>
 			</div>
 		</nav>
 		<hr>
@@ -115,9 +116,27 @@
 		</section>
 		<footer></footer>
 	</div>
+	
+	<script id="podcast-result-template" type="text/x-handlebars-template">
+		{{#each entries as |entry key|}}
+			{{#isZero key 4}}
+				</div><div class="row podcast-row">
+			{{/isZero}}
+			<div class="col-sm-3">
+				<div class="podcast-container text-center">
+					<img src="{{entry.im:image.0.label}}" class="img-cover" />
+					<span class="podcast-title m-top-xs">{{entry.title.label}}</span>	
+					<p class="podcast-author m-top-xs">Author: {{entry.im:artist.label}}</p>			
+				</div>
+			</div>
+		{{/each}}
+	</script>
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/handlebars-v4.0.5.js"></script>
+	<script src="js/handlebars-helpers.js"></script>
+	<script src="js/utils.js"></script>
+	<script src="js/podcast.js"></script>
 </body>
 </html>
