@@ -52,68 +52,7 @@
 				</div>
 			</div>
 		</header>
-		<section id="podcasts-list">
-			<div class="row podcast-row">
-				<div class="col-sm-3">
-					<div class="podcast-container text-center">
-						<img src="http://www.plazaespectaculos.cl/wp-content/uploads/2011/07/CARATULA-disco-nena-TIRO.jpg" class="img-cover" />
-						<span class="podcast-title m-top-xs">Título de prueba</span>	
-						<p class="podcast-author m-top-xs">Author: Diego</p>			
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="podcast-container text-center">
-						<img src="http://www.plazaespectaculos.cl/wp-content/uploads/2011/07/CARATULA-disco-nena-TIRO.jpg" class="img-cover" />
-						<span class="podcast-title m-top-xs">Título de prueba</span>	
-						<p class="podcast-author m-top-xs">Author: Diego</p>			
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="podcast-container text-center">
-						<img src="http://www.plazaespectaculos.cl/wp-content/uploads/2011/07/CARATULA-disco-nena-TIRO.jpg" class="img-cover" />
-						<span class="podcast-title m-top-xs">Título de prueba</span>	
-						<p class="podcast-author m-top-xs">Author: Diego</p>			
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="podcast-container text-center">
-						<img src="http://www.plazaespectaculos.cl/wp-content/uploads/2011/07/CARATULA-disco-nena-TIRO.jpg" class="img-cover" />
-						<span class="podcast-title m-top-xs">Título de prueba</span>	
-						<p class="podcast-author m-top-xs">Author: Diego</p>			
-					</div>
-				</div>
-			</div>
-			<div class="row podcast-row">
-				<div class="col-sm-3">
-					<div class="podcast-container text-center">
-						<img src="http://www.plazaespectaculos.cl/wp-content/uploads/2011/07/CARATULA-disco-nena-TIRO.jpg" class="img-cover" />
-						<span class="podcast-title m-top-xs">Título de prueba</span>	
-						<p class="podcast-author m-top-xs">Author: Diego</p>			
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="podcast-container text-center">
-						<img src="http://www.plazaespectaculos.cl/wp-content/uploads/2011/07/CARATULA-disco-nena-TIRO.jpg" class="img-cover" />
-						<span class="podcast-title m-top-xs">Título de prueba</span>	
-						<p class="podcast-author m-top-xs">Author: Diego</p>			
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="podcast-container text-center">
-						<img src="http://www.plazaespectaculos.cl/wp-content/uploads/2011/07/CARATULA-disco-nena-TIRO.jpg" class="img-cover" />
-						<span class="podcast-title m-top-xs">Título de prueba</span>	
-						<p class="podcast-author m-top-xs">Author: Diego</p>			
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div class="podcast-container text-center">
-						<img src="http://www.plazaespectaculos.cl/wp-content/uploads/2011/07/CARATULA-disco-nena-TIRO.jpg" class="img-cover" />
-						<span class="podcast-title m-top-xs">Título de prueba</span>	
-						<p class="podcast-author m-top-xs">Author: Diego</p>			
-					</div>
-				</div>
-			</div>
-		</section>
+		<section id="podcasts-list"></section>
 		<footer></footer>
 	</div>
 	
@@ -122,6 +61,7 @@
 			{{#isZero key 4}}
 				</div><div class="row podcast-row">
 			{{/isZero}}
+			{{#if entry.title}}
 			<div class="col-sm-3">
 				<div class="podcast-container text-center">
 					<img src="{{entry.im:image.0.label}}" class="img-cover" />
@@ -129,6 +69,7 @@
 					<p class="podcast-author m-top-xs">Author: {{entry.im:artist.label}}</p>			
 				</div>
 			</div>
+			{{/if}}
 		{{/each}}
 	</script>
 
