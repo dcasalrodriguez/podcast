@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Aplicación que obtiene los últimos 100 podcast de Apple">
+<meta name="description"
+	content="Aplicación que obtiene los últimos 100 podcast de Apple">
 <meta name="author" content="DCR">
 
 <title>Podcasts Apple</title>
@@ -19,10 +20,101 @@
 </head>
 
 <body>
-	<nav></nav>
-	<header></header>
-	<section></section>
-	<footer></footer>
+	<div class="container">
+		<nav>
+			<div class="row">
+				<div class="col-xs-12">
+					<h4>
+						<a href="index.html">Podcaster</a>
+					</h4>
+				</div>
+			</div>
+		</nav>
+		<hr>
+		<header>
+			<div class="row">
+				<div class="col-sm-6 pull-right">
+					<div class="col-xs-2 text-right">
+						
+					</div>
+					<div class="col-xs-10">
+						<form>
+							<div class="input-group">
+								<span class="input-group-addon">
+									<span class="badge bg-primary" id="contador-podcasts">100</span>
+								</span>
+								<input class="form-control" name="filter" id="filter"
+									placeholder="Filter podcasts..." /> 
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section id="podcasts-list">
+			<div class="row podcast-row">
+				<div class="col-sm-3">
+					<div class="podcast-container text-center">
+						<img src="http://www.plazaespectaculos.cl/wp-content/uploads/2011/07/CARATULA-disco-nena-TIRO.jpg" class="img-cover" />
+						<span class="podcast-title m-top-xs">Título de prueba</span>	
+						<p class="podcast-author m-top-xs">Author: Diego</p>			
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="podcast-container text-center">
+						<img src="http://www.plazaespectaculos.cl/wp-content/uploads/2011/07/CARATULA-disco-nena-TIRO.jpg" class="img-cover" />
+						<span class="podcast-title m-top-xs">Título de prueba</span>	
+						<p class="podcast-author m-top-xs">Author: Diego</p>			
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="podcast-container text-center">
+						<img src="http://www.plazaespectaculos.cl/wp-content/uploads/2011/07/CARATULA-disco-nena-TIRO.jpg" class="img-cover" />
+						<span class="podcast-title m-top-xs">Título de prueba</span>	
+						<p class="podcast-author m-top-xs">Author: Diego</p>			
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="podcast-container text-center">
+						<img src="http://www.plazaespectaculos.cl/wp-content/uploads/2011/07/CARATULA-disco-nena-TIRO.jpg" class="img-cover" />
+						<span class="podcast-title m-top-xs">Título de prueba</span>	
+						<p class="podcast-author m-top-xs">Author: Diego</p>			
+					</div>
+				</div>
+			</div>
+			<div class="row podcast-row">
+				<div class="col-sm-3">
+					<div class="podcast-container text-center">
+						<img src="http://www.plazaespectaculos.cl/wp-content/uploads/2011/07/CARATULA-disco-nena-TIRO.jpg" class="img-cover" />
+						<span class="podcast-title m-top-xs">Título de prueba</span>	
+						<p class="podcast-author m-top-xs">Author: Diego</p>			
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="podcast-container text-center">
+						<img src="http://www.plazaespectaculos.cl/wp-content/uploads/2011/07/CARATULA-disco-nena-TIRO.jpg" class="img-cover" />
+						<span class="podcast-title m-top-xs">Título de prueba</span>	
+						<p class="podcast-author m-top-xs">Author: Diego</p>			
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="podcast-container text-center">
+						<img src="http://www.plazaespectaculos.cl/wp-content/uploads/2011/07/CARATULA-disco-nena-TIRO.jpg" class="img-cover" />
+						<span class="podcast-title m-top-xs">Título de prueba</span>	
+						<p class="podcast-author m-top-xs">Author: Diego</p>			
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="podcast-container text-center">
+						<img src="http://www.plazaespectaculos.cl/wp-content/uploads/2011/07/CARATULA-disco-nena-TIRO.jpg" class="img-cover" />
+						<span class="podcast-title m-top-xs">Título de prueba</span>	
+						<p class="podcast-author m-top-xs">Author: Diego</p>			
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer></footer>
+	</div>
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
